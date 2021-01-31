@@ -9,21 +9,25 @@
 /* Begin PBXBuildFile section */
 		5E3E5F7725C217BA0034BD4D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3E5F7625C217BA0034BD4D /* AppDelegate.swift */; };
 		5E3E5F7925C217BA0034BD4D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3E5F7825C217BA0034BD4D /* SceneDelegate.swift */; };
-		5E3E5F7B25C217BA0034BD4D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3E5F7A25C217BA0034BD4D /* ViewController.swift */; };
+		5E3E5F7B25C217BA0034BD4D /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3E5F7A25C217BA0034BD4D /* TripViewController.swift */; };
 		5E3E5F7E25C217BA0034BD4D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3E5F7C25C217BA0034BD4D /* Main.storyboard */; };
 		5E3E5F8025C217BC0034BD4D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5E3E5F7F25C217BC0034BD4D /* Assets.xcassets */; };
 		5E3E5F8325C217BC0034BD4D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5E3E5F8125C217BC0034BD4D /* LaunchScreen.storyboard */; };
+		5E3E5F8D25C2226B0034BD4D /* TripCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3E5F8C25C2226B0034BD4D /* TripCollectionViewCell.swift */; };
+		5E3E5F9025C223C20034BD4D /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E3E5F8F25C223C20034BD4D /* Trip.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5E3E5F7325C217BA0034BD4D /* CarouselApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarouselApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E3E5F7625C217BA0034BD4D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5E3E5F7825C217BA0034BD4D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5E3E5F7A25C217BA0034BD4D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5E3E5F7A25C217BA0034BD4D /* TripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
 		5E3E5F7D25C217BA0034BD4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5E3E5F7F25C217BC0034BD4D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5E3E5F8225C217BC0034BD4D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5E3E5F8425C217BC0034BD4D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E3E5F8C25C2226B0034BD4D /* TripCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripCollectionViewCell.swift; sourceTree = "<group>"; };
+		5E3E5F8F25C223C20034BD4D /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +62,13 @@
 			children = (
 				5E3E5F7625C217BA0034BD4D /* AppDelegate.swift */,
 				5E3E5F7825C217BA0034BD4D /* SceneDelegate.swift */,
-				5E3E5F7A25C217BA0034BD4D /* ViewController.swift */,
+				5E3E5F7A25C217BA0034BD4D /* TripViewController.swift */,
 				5E3E5F7C25C217BA0034BD4D /* Main.storyboard */,
 				5E3E5F7F25C217BC0034BD4D /* Assets.xcassets */,
 				5E3E5F8125C217BC0034BD4D /* LaunchScreen.storyboard */,
 				5E3E5F8425C217BC0034BD4D /* Info.plist */,
+				5E3E5F8C25C2226B0034BD4D /* TripCollectionViewCell.swift */,
+				5E3E5F8F25C223C20034BD4D /* Trip.swift */,
 			);
 			path = CarouselApp;
 			sourceTree = "<group>";
@@ -137,7 +143,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E3E5F7B25C217BA0034BD4D /* ViewController.swift in Sources */,
+				5E3E5F9025C223C20034BD4D /* Trip.swift in Sources */,
+				5E3E5F7B25C217BA0034BD4D /* TripViewController.swift in Sources */,
+				5E3E5F8D25C2226B0034BD4D /* TripCollectionViewCell.swift in Sources */,
 				5E3E5F7725C217BA0034BD4D /* AppDelegate.swift in Sources */,
 				5E3E5F7925C217BA0034BD4D /* SceneDelegate.swift in Sources */,
 			);
@@ -289,6 +297,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T5W9JJU4Y5;
 				INFOPLIST_FILE = CarouselApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = T5W9JJU4Y5;
 				INFOPLIST_FILE = CarouselApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
